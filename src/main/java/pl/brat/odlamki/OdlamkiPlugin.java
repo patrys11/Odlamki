@@ -50,10 +50,10 @@ public class OdlamkiPlugin extends JavaPlugin implements Listener {
 
         // slot -> oferta
         offers.put(10, new Offer(PRICE_ARMOR, () -> make(Material.NETHERITE_HELMET, "§6§lHelm Brata",
-                Enchantment.PROTECTION, 6, Enchantment.UNBREAKING, 5, Enchantment.MENDING, 1,
-                Enchantment.RESPIRATION, 3, Enchantment.AQUA_AFFINITY, 1)));
+                Enchantment.PROTECTION, 5, Enchantment.UNBREAKING, 5, Enchantment.MENDING, 1,
+                Enchantment.RESPIRATION, 4, Enchantment.AQUA_AFFINITY, 1)));
         offers.put(11, new Offer(PRICE_ARMOR, () -> make(Material.NETHERITE_CHESTPLATE, "§6§lKlata Brata",
-                Enchantment.PROTECTION, 6, Enchantment.UNBREAKING, 5, Enchantment.MENDING, 1)));
+                Enchantment.PROTECTION, 5, Enchantment.UNBREAKING, 5, Enchantment.MENDING, 1)));
         offers.put(12, new Offer(PRICE_ARMOR, () -> make(Material.NETHERITE_LEGGINGS, "§6§lSpodnie Brata",
                 Enchantment.PROTECTION, 5, Enchantment.UNBREAKING, 4, Enchantment.MENDING, 1)));
         offers.put(13, new Offer(PRICE_ARMOR, () -> make(Material.NETHERITE_BOOTS, "§6§lButy Brata",
@@ -62,7 +62,7 @@ public class OdlamkiPlugin extends JavaPlugin implements Listener {
 
         offers.put(15, new Offer(PRICE_TOOL, () -> {
             ItemStack i = make(Material.NETHERITE_PICKAXE, "§b§lKilof Brata §7(3x3)",
-                    Enchantment.EFFICIENCY, 6, Enchantment.UNBREAKING, 5, Enchantment.MENDING, 1,
+                    Enchantment.EFFICIENCY, 5, Enchantment.UNBREAKING, 5, Enchantment.MENDING, 1,
                     Enchantment.FORTUNE, 3);
             ItemMeta m = i.getItemMeta();
             m.getPersistentDataContainer().set(TRIPLE_KEY, PersistentDataType.BYTE, (byte) 1);
