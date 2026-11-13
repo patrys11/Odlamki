@@ -144,7 +144,18 @@ public class OdlamkiPlugin extends JavaPlugin implements Listener {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+                if (args.length == 1 && args[0].equalsIgnoreCase("sklep")) {
+            if (sender instanceof Player pl) openShop(pl);
+            else sender.sendMessage("Tylko dla gracza.");
+            return true;
+        }
+        if (args.length == 2 && args[0].equalsIgnoreCase("otworz") && sender.hasPermission("odlamki.admin")) {
+            Player pl = Bukkit.getPlayerExact(args[1]);
+            if (pl != null) openShop(pl);
+            return true;
+        }
         if (!sender.hasPermission("odlamki.admin")) {
+            
             sender.sendMessage("§cBrak uprawnień.");
             return true;
         }
