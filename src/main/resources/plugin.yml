@@ -1,0 +1,12 @@
+name: OdlamkiPlugin
+version: 1.0
+main: pl.brat.odlamki.OdlamkiPlugin
+api-version: "1.21.11"
+commands:
+  odlamki:
+    description: Komendy admina do odlamkow i sklepu NPC
+    usage: /odlamki <give|sklep>
+permissions:
+  odlamki.admin:
+    description: Dostep do komend admina
+    default: op
